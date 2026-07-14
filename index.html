@@ -56,7 +56,6 @@
       scroll-snap-type: x mandatory;
       min-height: 500px;
       max-height: 80vh;
-      /* Hide scrollbar but keep functionality */
       scrollbar-width: thin;
     }
     #slides::-webkit-scrollbar {
@@ -235,31 +234,7 @@
     .teacher-notes h3 { border-bottom: 3px solid var(--gold); padding-bottom: 6px; }
     .teacher-notes p, .teacher-notes li { color: var(--light-grey); }
 
-    /* ===== Navigation Buttons ===== */
-    .slide-nav {
-      margin-top: auto;
-      text-align: center;
-      padding-top: 10px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-      flex-shrink: 0;
-    }
-    .slide-nav button {
-      background: var(--gold);
-      color: var(--navy-dark);
-      border: none;
-      padding: 6px 20px;
-      border-radius: 30px;
-      font-size: 0.85rem;
-      cursor: pointer;
-      margin: 0 6px;
-      font-weight: 600;
-      font-family: inherit;
-    }
-    .slide-nav button:hover {
-      background: var(--gold-light);
-    }
-
-    /* ===== Controls (Global Navigation) ===== */
+    /* ===== Controls (Global Navigation Only) ===== */
     .controls {
       display: flex;
       justify-content: center;
@@ -353,10 +328,6 @@
       <h2 style="border-bottom: none; font-size: 1.4rem; color: var(--gold-light);">Breaking the Ice &amp; Ending a Conversation</h2>
       <p style="font-size: 1rem; color: var(--light-grey);">Lesson objective: Use present simple, past simple, and present perfect to discuss hobbies and interests in social situations.</p>
       <img src="https://raw.githubusercontent.com/InglesLibre/ImageRepo/main/1Sailors.png" alt="Two naval officers in uniform shaking hands at a social event" style="max-height: 160px; width: auto; margin: 6px auto; border-radius: 12px; border: 2px solid var(--gold); box-shadow: 0 4px 16px rgba(0,0,0,0.4);">
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 2: Warm-Up ===== -->
@@ -375,10 +346,6 @@
           <li><strong>Small talk</strong> – polite conversation about unimportant topics</li>
           <li><strong>Get into</strong> – become interested in or start a hobby</li>
         </ul>
-      </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
       </div>
     </section>
 
@@ -411,10 +378,6 @@
         <p><strong style="color: var(--gold);">A:</strong> You too. See you around.</p>
         <p><strong style="color: var(--gold);">B:</strong> See you later.</p>
       </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 4: Comprehension Questions ===== -->
@@ -432,10 +395,6 @@
         <li>Have you ever made small talk at a social event? What did you talk about?</li>
       </ol>
       <p style="font-size: 0.75rem; font-style: italic; color: #8899aa;">Answers are in the teacher notes section.</p>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 5: Vocabulary Focus ===== -->
@@ -464,10 +423,6 @@
           <li><strong>How long have you been doing that?</strong> = How long have you had that hobby?</li>
         </ul>
       </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 6: Grammar Focus - Present Simple ===== -->
@@ -490,10 +445,6 @@
           <li>She <strong style="color: var(--gold);">reads</strong> historical fiction.</li>
           <li>They <strong style="color: var(--gold);">belong</strong> to a book club.</li>
         </ul>
-      </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
       </div>
     </section>
 
@@ -531,10 +482,6 @@
           </tr>
         </tbody>
       </table>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 8: Controlled Practice 1 ===== -->
@@ -555,10 +502,6 @@
       <div style="background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 4px; margin-top: 4px;">
         <p style="font-size: 0.75rem; font-style: italic; color: #8899aa;">Use hobbies from the vocabulary bank on Slide 5.</p>
       </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 9: Controlled Practice 2 ===== -->
@@ -576,10 +519,6 @@
       </div>
       <div style="background: rgba(255,255,255,0.06); padding: 4px 10px; border-radius: 4px; margin-top: 4px;">
         <p style="font-size: 0.75rem; font-style: italic; color: #8899aa;">Use hobbies, sports, and interests from the vocabulary bank on Slide 5.</p>
-      </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
       </div>
     </section>
 
@@ -603,10 +542,6 @@
           <li>"It was great talking to you."</li>
           <li>"Let's continue this later."</li>
         </ul>
-      </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
       </div>
     </section>
 
@@ -637,10 +572,6 @@
         <p><strong style="color: var(--gold);">A:</strong> _________________________________________________________________</p>
         <p><strong style="color: var(--gold);">B:</strong> _________________________________________________________________</p>
       </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
     <!-- ===== SLIDE 12: Reflection ===== -->
@@ -668,10 +599,6 @@
           <li><strong style="color: var(--gold);">Asking about hobbies:</strong> "What do you do in your free time?"</li>
           <li><strong style="color: var(--gold);">Ending:</strong> "It was great talking to you." / "See you around."</li>
         </ul>
-      </div>
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
       </div>
     </section>
 
@@ -746,16 +673,11 @@
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Attribution">
         <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="ShareAlike">
       </div>
-
-      <div class="slide-nav">
-        <button class="slide-prev" data-action="prev">Previous</button>
-        <button class="slide-next" data-action="next">Next</button>
-      </div>
     </section>
 
   </div><!-- end #slides -->
 
-  <!-- ===== GLOBAL NAVIGATION CONTROLS ===== -->
+  <!-- ===== GLOBAL NAVIGATION CONTROLS (Only Navigation) ===== -->
   <div class="controls">
     <button id="prevGlobal">Previous</button>
     <span class="counter" id="slideCounter">1 / 13</span>
@@ -811,23 +733,8 @@
     }
 
     // ===== EVENT LISTENERS =====
-    // Global navigation buttons
     document.getElementById('prevGlobal').addEventListener('click', prevSlide);
     document.getElementById('nextGlobal').addEventListener('click', nextSlide);
-
-    // Slide-specific navigation buttons (inside each slide)
-    document.querySelectorAll('.slide-prev').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        prevSlide();
-      });
-    });
-    document.querySelectorAll('.slide-next').forEach(function(btn) {
-      btn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        nextSlide();
-      });
-    });
 
     // ===== KEYBOARD NAVIGATION =====
     document.addEventListener('keydown', function(e) {
@@ -845,7 +752,7 @@
       updateActiveSlide();
     });
 
-    // ===== TOUCH SWIPE (basic) =====
+    // ===== TOUCH SWIPE =====
     var touchStartX = 0;
     var touchStartY = 0;
     slidesContainer.addEventListener('touchstart', function(e) {
@@ -879,13 +786,12 @@
 
     window.addEventListener('hashchange', handleHash);
 
-    // ===== RESIZE HANDLER (recalculate on window resize) =====
+    // ===== RESIZE HANDLER =====
     var resizeTimer;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function() {
         var current = updateActiveSlide();
-        // Re-snap to current slide after resize
         var slideWidth = slides[0].offsetWidth + 30;
         slidesContainer.scrollTo({
           left: current * slideWidth,
@@ -895,7 +801,6 @@
     });
 
     // ===== INIT =====
-    // Set initial position to first slide
     setTimeout(function() {
       slidesContainer.scrollTo({ left: 0, behavior: 'auto' });
       updateActiveSlide();
